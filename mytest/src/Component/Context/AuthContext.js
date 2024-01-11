@@ -5,9 +5,8 @@ import { createContext, useEffect, useReducer } from 'react'
 
 export const MyContext = createContext();
 
-const InitialState = { user: null, test: 'Awdiz' } // {_id , name, number, email} 
+const InitialState = { user: null, test: 'Awdiz' } 
 
-// action: { type: "LOGIN", payload : { name :"virat" , email : "virat@gmail.com"} }
 const Reducer = (state, action) => {
     switch (action.type) {
         case "LOGIN":
